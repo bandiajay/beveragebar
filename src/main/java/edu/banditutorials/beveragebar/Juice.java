@@ -7,7 +7,7 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author S546833
+ * @author SSaikiran Kumar Mandapalli
  */
 public abstract class Juice  extends AbstractBeverage{
     
