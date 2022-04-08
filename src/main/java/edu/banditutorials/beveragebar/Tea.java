@@ -5,7 +5,7 @@ package edu.banditutorials.beveragebar;
  * 
  * @author Ajay Bandi
  */
-public class Tea extends AbstractBeverage{
+public abstract class Tea extends AbstractBeverage{
 
     public Tea(String name) {
         super(name);
@@ -15,5 +15,7 @@ public class Tea extends AbstractBeverage{
     public String getDescription() {
         return "a delicious cup of tea, served hot.";
     }
+    
+    public abstract double totalprice();     
     
 }
