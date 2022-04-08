@@ -7,7 +7,7 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author S546833
+ * @author SSaikiranKumar Mandapalli
  */
 public class AppleJuice  extends Juice{
     
