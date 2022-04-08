@@ -10,9 +10,10 @@ package edu.banditutorials.beveragebar;
  */
 public class PeachSmoothie extends AbstractSmoothie {
 
+    //Quantity of fruit flavour extract blended in the smoothie.
     private double Flavour_Extract_By_Volume;
 
-    public PeachSmoothie(double Flavour_Extract_By_Volume, Double CaloriesPerServing, float price, int quantity, String name) {
+    public PeachSmoothie(double Flavour_Extract_By_Volume, double CaloriesPerServing, float price, int quantity, String name) {
         super(CaloriesPerServing, price, quantity, name);
         this.Flavour_Extract_By_Volume = Flavour_Extract_By_Volume;
     }
