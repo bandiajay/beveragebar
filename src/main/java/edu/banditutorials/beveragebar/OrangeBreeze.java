@@ -8,13 +8,13 @@ package edu.banditutorials.beveragebar;
  *
  * @author Vineeth Reddy Naredla S545160
  */
-public class OrangeBreeze {
+public class OrangeBreeze extends RefreshmentDrinks{
      private double price;
     private int quantity;
 
 
 
-public MelonSorbetFloat(double price, int quantity, String name) {
+public OrangeBreeze(double price, int quantity, String name) {
 super(name);
 this.price = price;
 this.quantity = quantity;
