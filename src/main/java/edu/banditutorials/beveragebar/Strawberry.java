@@ -37,7 +37,7 @@ public class Strawberry extends Lemonade implements LemonadeOrder {
      */
     @Override
     public String getQuantity(int quantity) {
-        return "You have ordered" + quantity + "Strawberry Lemonade";
+        return "You have ordered " + quantity + " Strawberry Lemonade";
     }
 
 }
