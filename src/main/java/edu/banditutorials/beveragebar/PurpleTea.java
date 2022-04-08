@@ -49,7 +49,7 @@ public class PurpleTea extends Tea{
 
     @Override
     public String toString() {
-        return "PurpleTea{" + "quantity=" + quantity + ", price=" + price + ", brand=" + brand + '}';
+        return super.getName()+", "+"PurpleTea{" + "quantity=" + quantity + ", price=" + price + ", brand=" + brand + '}';
     }
 
     @Override
@@ -57,7 +57,9 @@ public class PurpleTea extends Tea{
         return price*quantity;
     }
     
-    
-    
+    @Override
+    public String getDescription() {
+        return "A cup of tea makes everything better.";
+    }
     
 }
