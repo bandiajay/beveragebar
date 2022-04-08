@@ -8,7 +8,9 @@ package edu.banditutorials.beveragebar;
  *
  * @author Anjana Thanguturi
  */
-public class Lemonade extends AbstractBeverage {
+public abstract class Lemonade extends AbstractBeverage {
+
+    private int quantity;
 
     /**
      * Constructor
@@ -20,13 +22,28 @@ public class Lemonade extends AbstractBeverage {
     }
 
     /**
-     * A method to get description
+     * A method to get quantity
      *
-     * @return Returns string
+     * @return Returns quantity
      */
-    @Override
-    public String getDescription() {
-        return "Select a lemonade 1.Mango 2.Orange 3.Strawberry 4.Vanilla";
+    public int getQuantity() {
+        return quantity;
     }
+
+    /**
+     * A method to set quantity
+     *
+     * @param quantity
+     */
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    /**
+     * A method to calculate price
+     *
+     * @return Returns calculated price
+     */
+    public abstract String calculatePrice();
 
 }
