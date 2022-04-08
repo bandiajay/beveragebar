@@ -12,5 +12,29 @@ public class StrawberryMojito extends Mojito{
     private double quantity;
     private double price;
      
+    public StrawberryMojito(String name,double quantity,double price){
+        super(name);
+        this.quantity=quantity;
+        this.price=price;
+   
+    }
     
+    public double getQuantity(){
+        return quantity;
+    }
+    
+     public double getPrice(){
+        return price;
+    }
+   
+    
+    @Override
+    public double getTotalPrice(){
+        return 0.0;
+    }
+    
+    @Override
+    public String getDescription(){
+        return "Hello";
+    }
 }
