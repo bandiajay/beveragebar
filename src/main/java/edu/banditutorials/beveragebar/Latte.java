@@ -16,9 +16,7 @@ public class Latte extends Coffee {
     public Latte(int quantity, Boolean isServeredHot, double caffeine,String name) {
         super(isServeredHot, caffeine, name);
         this.quantity = quantity;
-    }
-
-    
+    }  
     
     
     @Override
@@ -35,19 +33,19 @@ public class Latte extends Coffee {
         this.quantity = quantity;
     }
 
-    public static double getMILKCOSTPERSERVING() {
+    public static double getMilkCostPerServing() {
         return MILKCOSTPERSERVING;
     }
 
-    public static double getWATERCOSTPERSERVING() {
+    public static double getWaterCostPerServing() {
         return WATERCOSTPERSERVING;
     }
 
-    public static double getBEANSCOSTPERSERVING() {
+    public static double getBeansCostPerServing() {
         return BEANSCOSTPERSERVING;
     }
 
-    public static double getSUGARCOSTPERSERVING() {
+    public static double getSugarCostPerServing() {
         return SUGARCOSTPERSERVING;
     }
 
