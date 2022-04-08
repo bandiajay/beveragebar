@@ -8,14 +8,14 @@ package edu.banditutorials.beveragebar;
  *
  * @author Anjana Thanguturi
  */
-public class Strawberry extends Lemonade implements LemonadeOrder {
+public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
 
     /**
      * Constructor
      *
      * @param name name of the instance
      */
-    public Strawberry(String name) {
+    public StrawberryLemonade(String name) {
         super(name);
     }
 
