@@ -11,8 +11,10 @@ package edu.banditutorials.beveragebar;
  */
 public abstract class Juice  extends AbstractBeverage{
     
-    
-    
+    public Juice(String name)
+    {
+      super(name);  
+    }
     public abstract  String juiceCost();
     
   
