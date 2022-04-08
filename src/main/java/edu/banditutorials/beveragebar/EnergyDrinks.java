@@ -13,6 +13,21 @@ package edu.banditutorials.beveragebar;
 public abstract class EnergyDrinks extends AbstractBeverage {
     
     private int quantity;
+
+    public EnergyDrinks(int quantity, String name) {
+        super(name);
+        this.quantity = quantity;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    
+    
     
     public abstract String calculatePrice();   
   
