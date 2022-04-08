@@ -15,14 +15,14 @@ public abstract class AbstractSmoothie extends AbstractBeverage {
     public int quantity;
 
 
-    public AbstractSmoothie(Double CaloriesPerServing, float price, int quantity, String name) {
+    public AbstractSmoothie(double CaloriesPerServing, float price, int quantity, String name) {
         super(name);
         this.CaloriesPerServing = CaloriesPerServing;
         this.price = price;
         this.quantity = quantity;
     }
 
-    public Double getCaloriesPerServing() {
+    public double getCaloriesPerServing() {
         return CaloriesPerServing;
     }
 
@@ -34,7 +34,7 @@ public abstract class AbstractSmoothie extends AbstractBeverage {
         return quantity;
     }
 
-    public void setCaloriesPerServing(Double CaloriesPerServing) {
+    public void setCaloriesPerServing(double CaloriesPerServing) {
         this.CaloriesPerServing = CaloriesPerServing;
     }
 
