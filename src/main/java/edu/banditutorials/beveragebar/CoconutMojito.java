@@ -57,8 +57,8 @@ public class CoconutMojito extends Mojito {
         return "Welcome!!";
     }
 
-    @override
-    public abstract double getTotalPrice() {
+    @Override
+    public double getTotalPrice() {
         return 0.0;
     }
 }
