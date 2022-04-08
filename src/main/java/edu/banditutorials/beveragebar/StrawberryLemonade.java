@@ -11,12 +11,14 @@ package edu.banditutorials.beveragebar;
 public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
 
     /**
-     * Constructor
+     * A constructor
      *
-     * @param name name of the instance
+     * @param name
+     * @param quantity
      */
-    public StrawberryLemonade(String name) {
+    public StrawberryLemonade(String name, int quantity) {
         super(name);
+        super.setQuantity(quantity);
     }
 
     /**
@@ -32,12 +34,21 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
     /**
      * A method to print selected quantity
      *
-     * @param quantity Number of ordered lemonades
      * @return Returns string
      */
     @Override
-    public String getQuantity(int quantity) {
-        return "You have ordered " + quantity + " Strawberry Lemonade";
+    public String getQuantityStatement() {
+        return "You have ordered " + super.getQuantity() + " Strawberry Lemonade";
+    }
+
+    /**
+     * A method to calculate price
+     *
+     * @return Return calculated price
+     */
+    @Override
+    public String calculatePrice() {
+        return "Your have to pay $" + super.getQuantity() * 4;
     }
 
 }
