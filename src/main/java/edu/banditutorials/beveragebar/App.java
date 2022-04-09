@@ -112,7 +112,5 @@ public class App {
 
         // output goodbye
         System.out.println(GOODBYE_MESSAGE);
-
     }
-
 }

@@ -6,9 +6,9 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author Anjana Thanguturi
+ * @author Ravichandrika Annadanam - S545547 
  */
-public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
+public class VanillaLemonade extends Lemonade implements LemonadeOrder {
 
     /**
      * A constructor
@@ -16,7 +16,7 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
      * @param name
      * @param quantity
      */
-    public StrawberryLemonade(String name, int quantity) {
+    public VanillaLemonade(String name, int quantity) {
         super(name);
         super.setQuantity(quantity);
     }
@@ -28,7 +28,7 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
      */
     @Override
     public String getDescription() {
-        return "You have selected Strawberry Lemonade";
+        return "You have selected Vanilla Lemonade";
     }
 
     /**
@@ -38,7 +38,7 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
      */
     @Override
     public String getQuantityStatement() {
-        return "You have ordered " + super.getQuantity() + " Strawberry Lemonade";
+        return "You have ordered " + super.getQuantity() + " Vanilla Lemonade";
     }
 
     /**
@@ -48,7 +48,7 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
      */
     @Override
     public String calculatePrice() {
-        return "Your have to pay $" + super.getQuantity() * 4;
+        return "Your have to pay $" + super.getQuantity() * 2;
     }
 
 }
