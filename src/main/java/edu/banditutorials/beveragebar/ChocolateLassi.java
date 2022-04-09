@@ -17,7 +17,9 @@ public class ChocolateLassi extends Lassi{
         return CHOCOESSENSECOSTPERSERVING;
  
     }
-    
+    public ChocolateLassi(double MilkCostPerServing, double SugarcostPerserving, double quantity, double fatContent, String name) {
+        super(MilkCostPerServing, SugarcostPerserving, quantity, fatContent, name);
+    }
         
     @Override
     public double calcPrice() {
