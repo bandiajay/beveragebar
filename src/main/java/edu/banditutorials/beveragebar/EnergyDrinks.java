@@ -1,37 +1,36 @@
-
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package edu.banditutorials.beveragebar;
+package test;
 
 /**
  *
- * @author s546444
+ * @author NIKHILA CHOWDARY VAITLA
  */
-public abstract class EnergyDrinks extends AbstractBeverage {
+public class RedBull extends EnergyDrinks{
     
-    private int quantity;
+    private double caffine_percentage;
+    private double sweetner_percentage;
+    private double price;
 
-    public EnergyDrinks(int quantity, String name) {
-        super(name);
-        this.quantity = quantity;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public RedBull(double caffine_percentage, double sweetner_percentage,double price, int quantity, String name) {
+        super(quantity, name);
+        this.caffine_percentage = caffine_percentage;
+        this.sweetner_percentage = sweetner_percentage;
     }
     
     
+    @Override
+    public String calculatePrice() {
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "price*quantity";
+    }
+
+    @Override
+    public String getDescription() {
+        return "Hi instant energy with RedBull";
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
-    public abstract String calculatePrice();   
-  
 }
-
-    
-
