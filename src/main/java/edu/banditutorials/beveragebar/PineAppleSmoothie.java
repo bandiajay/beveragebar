@@ -6,7 +6,7 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author S546512
+ * @author Haritha Kumpati S546512 
  */
 public class PineAppleSmoothie extends AbstractSmoothie {
     private double countCalories;
