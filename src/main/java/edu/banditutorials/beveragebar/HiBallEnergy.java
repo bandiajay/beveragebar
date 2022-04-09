@@ -14,7 +14,7 @@ public class HiBallEnergy extends EnergyDrinks {
 
   public HiBallEnergy(double price,int quantity, String name) {
         super(quantity, name);
-        this.price = price; 
+        this.price = price;
     }
 
    @Override
@@ -26,9 +26,9 @@ public class HiBallEnergy extends EnergyDrinks {
     public String getDescription() {
        return "Wild Berry Naturally Flavoured";
     }
-    
+}
     
 
-    
+
 
 
