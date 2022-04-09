@@ -1,44 +1,45 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package edu.banditutorials.beveragebar;
 
 /**
- *
- * @author Anjana Thanguturi
+ *@author Tirumala Reddy Hitesh Reddy
+ * @author S545131
  */
-public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
+public class MangoLemonade extends  Lemonade implements LemonadeOrder{
 
-    /**
+       /**
      * A constructor
      *
      * @param name
      * @param quantity
      */
-    public StrawberryLemonade(String name, int quantity) {
+    public MangoLemonade(String name, int quantity) {
         super(name);
         super.setQuantity(quantity);
     }
-
-    /**
+     
+       /**
      * A method to get description
      *
      * @return Returns string
      */
     @Override
     public String getDescription() {
-        return "You have selected Strawberry Lemonade";
+        return "You have selected Mango Lemonade";
     }
-
-    /**
+  
+   /**
      * A method to print selected quantity
      *
      * @return Returns string
      */
     @Override
     public String getQuantityStatement() {
-        return "You have ordered " + super.getQuantity() + " Strawberry Lemonade";
+        return "You have ordered " + super.getQuantity() + " Mango Lemonade";
     }
 
     /**
@@ -48,7 +49,8 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
      */
     @Override
     public String calculatePrice() {
-        return "Your have to pay $" + super.getQuantity() * 4;
+        return "Your have to pay $" + super.getQuantity() * 6;
     }
 
 }
+
