@@ -11,7 +11,7 @@ package edu.banditutorials.beveragebar;
  */
 public abstract class Lassi extends AbstractBeverage{
     
-     private double MilkCostPerServing;
+    private double MilkCostPerServing;
     private double SugarcostPerserving;
     private double quantity;
     private double fatContent;
