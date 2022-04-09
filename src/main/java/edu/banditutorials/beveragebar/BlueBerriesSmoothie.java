@@ -6,26 +6,25 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author s546443
+ * @author Naina Sahiri s546443
  */
 public class BlueBerriesSmoothie extends AbstractSmoothie{
-    private double Flavour_Extract_By_Percentage;
+    private double flavourExtract;
 
-    public BlueBerriesSmoothie(double Flavour_Extract_By_Volume, double CaloriesPerServing,
-        float price, int quantity, String name) {
+    public BlueBerriesSmoothie(double flavourExtract, double CaloriesPerServing,
+            float price, int quantity, String name) {
         super(CaloriesPerServing, price, quantity, name);
-        this.Flavour_Extract_By_Percentage = Flavour_Extract_By_Volume;
+        this.flavourExtract = flavourExtract;
     }
 
-    public double getFlavour_Extract_By_Percentage(){ 
-        return Flavour_Extract_By_Percentage;
+    public double getFlavourExtract() {
+        return flavourExtract;
     }
 
-    public void setFlavour_Extract_By_Volume(double Flavour_Extract_By_Percentage) {
-        this.Flavour_Extract_By_Percentage = Flavour_Extract_By_Percentage;
+    public void setFlavourExtract(double flavourExtract) {
+        this.flavourExtract = flavourExtract;
     }
     
-
     @Override
     public double calCost() {
         return price*quantity;
@@ -39,7 +38,7 @@ public class BlueBerriesSmoothie extends AbstractSmoothie{
 
     @Override
     public String toString() {
-        return "BluberriesSmoothie{" + "Flavour_Extract_By_Volume=" + Flavour_Extract_By_Volume + '}'+super.toString();
+        return "Bluberries Smoothie{" + "Flavour Percentage=" + flavourExtract + '}'+super.toString();
     }
     
 }
