@@ -9,40 +9,57 @@ package edu.banditutorials.beveragebar;
  *
  * @author S546947
  */
-public class BlackberryMojito {
+public class BlackberryMojito extends Mojito {
+
     private double price;
-    private string quantity;
-    private int calories;
-    
-    //constructor
-    public BlackberryMojito(double price,string quantity, int calories ){
-        this.price=price;
-        this.quantity=quantity;
-        this.calories=calories;
+    private String quantity;
+
+    /**
+     * @param name
+     * @param price
+     * @param quantity
+     */
+    public BlackberryMojito(String name, double price, String quantity) {
+        super(name);
+        this.price = price;
+        this.quantity = quantity;
     }
-    
-    //setter
-    public void setPrice(double price){
-        this.price=price;
+
+    /**
+     * @param price
+     */
+    public void setPrice(double price) {
+        this.price = price;
     }
-    public void setQuantity(string quantity){
-        this.quantity=quantity;
+
+    /**
+     * @param quantity
+     */
+    public void setQuantity(double quantity) {
+        this.price = price;
+
     }
-    public void setCalories(int calories){
-        this.calories=calories;
-    }
-    
-    //getter
-    public double getPrice(){
+
+    /**
+     * @return price
+     */
+    public double getPrice() {
         return price;
     }
-    public string getQuantity(){
+
+    /**
+     * @return quantity
+     */
+    public String getQuantity() {
         return quantity;
     }
-    public int getCalories(){
-        return calories;
+@Override
+    public String getDescription() {
+        return "It is  a Blackberry Mojito";
     }
-    
-    //getter abstract
-    public abstract double getTotalPrice();
+
+    @Override
+    public double getTotalPrice() {
+        return 0.0;
+    }
 }
