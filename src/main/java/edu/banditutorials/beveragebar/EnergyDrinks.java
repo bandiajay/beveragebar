@@ -7,7 +7,7 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author s546518
+ * @author s546444
  */
 public abstract class EnergyDrinks extends AbstractBeverage {
     
@@ -31,3 +31,4 @@ public abstract class EnergyDrinks extends AbstractBeverage {
     public abstract String calculatePrice();   
   
 }
+
