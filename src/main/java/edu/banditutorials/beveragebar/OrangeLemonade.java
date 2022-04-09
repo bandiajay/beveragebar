@@ -8,12 +8,12 @@ package edu.banditutorials.beveragebar;
  *
  * @author SRAVANI NALLA
  */
-public class OrangeLemonade extends Lemonade implements LemonadeOrder{
+public class OrangeLemonade extends Lemonade implements LemonadeOrder {
 
     public OrangeLemonade(String name) {
         super(name);
     }
-    
+
     /**
      * A method to get description
      *
@@ -24,16 +24,16 @@ public class OrangeLemonade extends Lemonade implements LemonadeOrder{
         return "You have selected Orange Lemonade";
     }
 
-    /**
-     * A method to print selected quantity
-     *
-     * @param quantity Number of ordered lemonades
-     * @return Returns string
-     */
-    
+   
+
     @Override
-    public String getQuantity(int quantity) {
-       return "You have ordered " + quantity + " Orange Lemonade";
+    public String calculatePrice() {
+         return "Your have to pay $" + super.getQuantity() * 4;
     }
-    
+
+    @Override
+    public String getQuantityStatement() {
+        return "You have ordered " + super.getQuantity() + " Orange Lemonade";
+    }
+
 }
