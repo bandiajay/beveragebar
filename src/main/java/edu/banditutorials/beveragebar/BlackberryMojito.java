@@ -1,14 +1,15 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author s547054 Jessica Salome
+ * @author S546947
  */
-    public class ClassicMintMojito extends Mojito {
+public class BlackberryMojito extends Mojito {
 
     private double price;
     private String quantity;
@@ -18,7 +19,7 @@ package edu.banditutorials.beveragebar;
      * @param price
      * @param quantity
      */
-    public ClassicMintMojito(String name, double price, String quantity) {
+    public BlackberryMojito(String name, double price, String quantity) {
         super(name);
         this.price = price;
         this.quantity = quantity;
@@ -52,15 +53,13 @@ package edu.banditutorials.beveragebar;
     public String getQuantity() {
         return quantity;
     }
-    @Override
+@Override
     public String getDescription() {
-        return "Hii!!";
+        return "It is  a Blackberry Mojito";
     }
 
-    
+    @Override
     public double getTotalPrice() {
         return 0.0;
     }
 }
-    
-
