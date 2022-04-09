@@ -35,6 +35,7 @@ public abstract class ChocolateShakes extends AbstractShakes {
         return price*quantity;
     }
     
+    @Override
     public String getDescription(){
         return ("Yummy Yummy CoCaShake, Served Cool");
     }
