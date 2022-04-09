@@ -25,7 +25,7 @@ public class BangBlueRazz extends EnergyDrinks {
 
     @Override
     public String getDescription() {
-       return "Potent Brain and Body Energy with razz flavour";
+       return "High instant energy with red Bull";
     }
     
     
