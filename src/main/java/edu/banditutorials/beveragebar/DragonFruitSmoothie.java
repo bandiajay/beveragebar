@@ -7,7 +7,7 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * author Shanmukha Sriharsha Kalluri
+ * author @Shanmukha Sriharsha Kalluri
  */
 public class DragonFruitSmoothie extends AbstractSmoothie{
 
