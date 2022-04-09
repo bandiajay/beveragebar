@@ -18,7 +18,7 @@ package edu.banditutorials.beveragebar;
      * @param price
      * @param quantity
      */
-    public ClassicMint(String name, double price, String quantity) {
+    public ClassicMintMojito(String name, double price, String quantity) {
         super(name);
         this.price = price;
         this.quantity = quantity;
@@ -52,12 +52,12 @@ package edu.banditutorials.beveragebar;
     public String getQuantity() {
         return quantity;
     }
-
+    @Override
     public String getDescription() {
         return "Hii!!";
     }
 
-    @Override
+    
     public double getTotalPrice() {
         return 0.0;
     }
