@@ -10,25 +10,24 @@ package edu.banditutorials.beveragebar;
  */
 public abstract class OreoShakes extends AbstractShakes {
     
-private double CarbohydrateCount;
+private double carbohydrateCount;
 
-
-public OreoShakes(double CarbohydrateCount, double price, double quantity, String name) {
+    public OreoShakes(float price, int quantity, String name, double carbohydrateCount ) {
         super(price, quantity, name);
-        this.CarbohydrateCount = CarbohydrateCount;
+        this.carbohydrateCount = carbohydrateCount;  
     }
-
+    
     public double getCarbohydrateCount() {
-        return CarbohydrateCount;
+        return carbohydrateCount;
     }
 
     public void setCarbohydrateCount(double CarbohydrateCount) {
-        this.CarbohydrateCount = CarbohydrateCount;
+        this.carbohydrateCount = CarbohydrateCount;
     }
 
     @Override
     public String toString() {
-        return super.toString()+"OreoShakes{" + "CarbohydrateCount=" + CarbohydrateCount + '}';
+        return super.toString()+"OreoShakes{" + "CarbohydrateCount=" + carbohydrateCount + '}';
     }
 
     
