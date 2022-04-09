@@ -13,8 +13,7 @@ public interface LemonadeOrder {
     /**
      * Abstract method
      *
-     * @param quantity
      * @return Returns string
      */
-    String getQuantity(int quantity);
+    String getQuantityStatement();
 }
