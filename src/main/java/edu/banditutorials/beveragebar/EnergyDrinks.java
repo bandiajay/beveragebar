@@ -8,29 +8,23 @@ package test;
  *
  * @author NIKHILA CHOWDARY VAITLA
  */
-public class RedBull extends EnergyDrinks{
+public abstract class EnergyDrinks extends AbstractBeverage {
     
-    private double caffine_percentage;
-    private double sweetner_percentage;
-    private double price;
-
-    public RedBull(double caffine_percentage, double sweetner_percentage,double price, int quantity, String name) {
-        super(quantity, name);
-        this.caffine_percentage = caffine_percentage;
-        this.sweetner_percentage = sweetner_percentage;
-    }
-    
-    
-    @Override
-    public String calculatePrice() {
-        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        return "price*quantity";
+    private int quantity;
+            
+    public EnergyDrinks(int quantity, String name) {
+        super(name);
+        this.quantity = quantity;
     }
 
-    @Override
-    public String getDescription() {
-        return "Hi instant energy with RedBull";
-        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int getQuantity() {
+        return quantity;
     }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    
+    public abstract String calculatePrice();
     
 }
