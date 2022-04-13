@@ -7,31 +7,33 @@ package edu.banditutorials.beveragebar;
 
 /**
  *
- * @author s546444
+ * @author s546518
  */
-public class BangBlueRazz extends EnergyDrinks {
+public class RedBull extends EnergyDrinks{
     
+    private double caffine_percentage;
+    private double sweetner_percentage;
     private double price;
 
-    public BangBlueRazz(double price,int quantity, String name) {
+    public RedBull(double caffine_percentage, double sweetner_percentage,double price, int quantity, String name) {
         super(quantity, name);
-        this.price = price; 
+        this.caffine_percentage = caffine_percentage;
+        this.sweetner_percentage = sweetner_percentage;
     }
-
-   @Override
+    
+    
+    @Override
     public String calculatePrice() {
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         return "price*quantity";
     }
 
     @Override
     public String getDescription() {
-       return "High instant energy with red Bull";
+        return "High instant energy with RedBull";
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
-    
-
-    
-    }
+}
    
    
 
