@@ -11,14 +11,14 @@ package edu.banditutorials.beveragebar;
 public class CoconutMojito extends Mojito {
 
     private double price;
-    private String quantity;
+    private double quantity;
 
     /**
      * @param name
      * @param price
      * @param quantity
      */
-    public CoconutMojito(String name, double price, String quantity) {
+    public CoconutMojito(String name,double quantity, double price) {
         super(name);
         this.price = price;
         this.quantity = quantity;
@@ -49,16 +49,18 @@ public class CoconutMojito extends Mojito {
     /**
      * @return quantity
      */
-    public String getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
+    @Override
     public String getDescription() {
-        return "Welcome!!";
+        return "with a total cost of: $";
     }
 
     @Override
     public double getTotalPrice() {
-        return 0.0;
+        return price*quantity;
+  
     }
 }

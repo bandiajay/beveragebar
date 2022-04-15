@@ -19,7 +19,7 @@ public class App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting!";
 
     // specify number of  custom types available - UPDATE AS IT GROWS! 
-    private static final int NUMBER_CUSTOM_TYPES = 33;
+    private static final int NUMBER_CUSTOM_TYPES = 41;
 
     /**
      * This main() method is the entry point for our application.
@@ -86,6 +86,21 @@ public class App {
 			System.out.print("27.ChocolateShakes           ");
 			System.out.print("28.OreoShake            ");
 			System.out.print("29.ButterscotchShake            ");
+			
+			System.out.print("30.StrawberryLemonade            ");
+			System.out.print("31.MangoLemonade           ");
+			System.out.print("32.OrangeLemonade            ");
+			System.out.print("33.VanillaLemonade            ");
+			
+			System.out.print("34.ChocolateLassi            ");
+			System.out.print("35.MangoLassi           ");
+			System.out.print("36.DryFruitLassi            ");
+			System.out.print("37.BananaLassi            ");
+			
+			System.out.print("38.StrawberryMojito            ");
+			System.out.print("39.CoconutMojito           ");
+			System.out.print("40.BlackberryMojito            ");
+			System.out.print("41.ClassicMintMojito            ");
 		
 System.out.println(" 30.Strawberry Lemonade                 ");
 System.out.print(" 31.Mango Lemonade                 ");
@@ -293,7 +308,7 @@ System.out.print(" 33.Vanilla Lemonade                 ");
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The GlucoseContent is" + f);
                         }
 
-			case 27 -> {
+                        case 27 -> {
                             var b = new ChocolateShakes(150.7, 20, 35 ,"Chocolate");
                             var n = b.getName();
                             var d = b.getDescription();
@@ -302,23 +317,23 @@ System.out.print(" 33.Vanilla Lemonade                 ");
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The ProteinCount is" + f);
                         }
 
-			case 28 -> {
-                            var b = new OreoShake(200.7, 15, 25 ,"Oreo");
+                        case 28 -> {
+                            var b = new OreoShakes(200, 15, "Oreo", 25);
                             var n = b.getName();
                             var d = b.getDescription();
 			    var e = b.calculatecost();
-		            var f = b.getcarbohydrateCount();
+		            var f = b.getCarbohydrateCount();
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The carbohydrateCount is" + f);
                         }
 
-			case 29 -> {
+                        case 29 -> {
                             var b = new ButterscotchShake(250.6, 10, 20 ,"Butterscotch");
                             var n = b.getName();
                             var d = b.getDescription();
 			    var e = b.calculatecost();
 		            var f = b.getCalorieCount();
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The calorieCount is" + f);
-                        }	
+                        }
 		 case 30 -> {
                             
                                     var b = new StrawberryLemonade(
@@ -342,7 +357,7 @@ System.out.print(" 33.Vanilla Lemonade                 ");
  case 32 -> {
                             
                                     var b = new OrangeLemonade(
-                                            "Orange Lemonade", 6);
+                                            "Orange Lemonade");
                                     var d = b.getDescription();
                                     var a = b.getQuantityStatement();
                                     System.out.println(d + " and " + a);
@@ -375,6 +390,39 @@ case 37 -> {
     var b = new BananaLassi(2,1,5,200,"BananaLassi");
     System.out.println(b.getName() + ", of  price $" + b.calcPrice() + ".");
     }
+					    case 38 -> {
+                            var b = new StrawberryMojito("Strawberry Mojito",1.0,25.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                            System.out.println("I'm a " + n + " " + d + " "+c+".");
+                          
+                        }
+                        
+                        case 39 -> {
+                            var b = new CoconutMojito("Coconut Mojito",2.0,35.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                             System.out.println("I'm a " + n + " " + d + " "+c+".");
+                           
+                        }
+                        case 40 -> {
+                            var b = new BlackberryMojito("Blackberry Mojito",3.0,15.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                            System.out.println("I'm a " + n + " " + d + " "+c+".");
+                            
+                        }
+                        case 41 -> {
+                            var b = new ClassicMintMojito("ClassicMint Mojito",4.0,10.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                           System.out.println("I'm a " + n + " " + d + " "+c+".");
+                            
+                        }
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
