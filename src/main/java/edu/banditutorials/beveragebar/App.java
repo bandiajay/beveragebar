@@ -75,9 +75,13 @@ public class App {
 			System.out.print(" 16. Dragon Fruit Smoothie               ");
 			System.out.print(" 17. PineApple Smmothie               ");
 			System.out.print("18.PediaLyte            ");
-                    System.out.print("19.ORS            ");
-                    System.out.print("20.LMNT            ");
-                    System.out.print("21.Essentia            ");
+                        System.out.print("19.ORS            ");
+                        System.out.print("20.LMNT            ");
+                        System.out.print("21.Essentia            ");
+			System.out.print("22.Red Bull            ");
+			System.out.print("23.Bang Blue Razz            ");
+			System.out.print("24.HiBall Energy            ");
+			System.out.print("25.Monster Energy            ");
                     
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -252,6 +256,22 @@ public class App {
                             System.out.println("I'm " + nam + ", " + des + ", manufactured by " + man + " available in  " + typ + " ");
                             System.out.println("Mineral Content==>"+elec.calcMineralContent());
                             System.out.println("Price:"+ elec.getPrice());
+                        }
+		        case 6 -> {
+                            var RedBull = new RedBull(30, 56, 41.2, 2, "RedBull");
+                            System.out.println("I'm " + RedBull.getName() + ", a " + RedBull.getDescription()+ ".");
+                        } 
+                        case 7 -> {
+                            var bb = new BangBlueRazz(34.5, 10, "BangBlueRazz");
+                            System.out.println("I'm " + bb.getName() + ", a " + bb.getDescription()+ ".");
+                        }
+                        case 8 -> {
+                            var hb = new HiBallEnergy(28.9, 5, "HiBallEnergy");
+                            System.out.println("I'm " + hb.getName() + ", a " + hb.getDescription()+ ".");
+                        }
+                        case 9 -> {
+                            var mg = new MonsterEnergy(20.6, 6, "MonsterEnergy");
+                            System.out.println("I'm " + mg.getName() + ", a " + mg.getDescription()+ ".");
                         }
                          
                         //// END PASTE (right-click and Format )
