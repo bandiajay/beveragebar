@@ -20,7 +20,7 @@ public class App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting!";
 
     // specify number of  custom types available - UPDATE AS IT GROWS! 
-    private static final int NUMBER_CUSTOM_TYPES = 7;
+    private static final int NUMBER_CUSTOM_TYPES = 4;
 
     /**
      * This main() method is the entry point for our application.
@@ -64,7 +64,6 @@ public class App {
                     System.out.print(" 1.Coffee              ");
                     System.out.print(" 2.Milk                ");
                     System.out.print(" 3.Tea                 ");
-                    System.out.print(" 7.Lemonade                 ");
 
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -100,7 +99,6 @@ public class App {
                             var d = b.getDescription();
                             System.out.println("I'm " + n + ", a " + d + ".");
                         }
-                       
 
                         //// END PASTE (right-click and Format )
                         default -> {
