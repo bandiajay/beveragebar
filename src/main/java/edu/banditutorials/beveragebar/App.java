@@ -110,6 +110,39 @@ public class App {
                             var gingerale = new Gingerale(25.00, "gingerale", 10.00, 65.00);
                             System.out.println("I'm " + gingerale.getName() + ", a " + gingerale.getDescription()+ ".");
                         } 
+                        
+                        case 7 -> {
+                            var b = new PeachSmoothie(25.5, 9.0, 5, 5, "Smoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+e);
+                        }
+                        
+                        case 8 -> {
+                            var b = new BlueBerriesSmoothie(45.5, 5.0, 7, 3, "Smoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+ e);
+                        }
+                        
+                        case 9 -> {
+                            var b = new DragonFruitSmoothie(7.0, 10, 6, "Smoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+ e);
+                        }
+                        
+                        case 10 -> {
+                            var b = new PineAppleSmoothie(15.5, 8.0, 13, 9, "Smoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+ e);
+                        }
+                        
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
