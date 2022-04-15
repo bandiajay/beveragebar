@@ -19,7 +19,7 @@ public class App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting!";
 
     // specify number of  custom types available - UPDATE AS IT GROWS! 
-    private static final int NUMBER_CUSTOM_TYPES = 3;
+    private static final int NUMBER_CUSTOM_TYPES = 33;
 
     /**
      * This main() method is the entry point for our application.
@@ -86,6 +86,11 @@ public class App {
 			System.out.print("27.ChocolateShakes           ");
 			System.out.print("28.OreoShake            ");
 			System.out.print("29.ButterscotchShake            ");
+		
+System.out.println(" 30.Strawberry Lemonade                 ");
+System.out.print(" 31.Mango Lemonade                 ");
+System.out.print(" 32.Orange Lemonade                 ");
+System.out.print(" 33.Vanilla Lemonade                 ");
                     
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -313,7 +318,47 @@ public class App {
 			    var e = b.calculatecost();
 		            var f = b.getCalorieCount();
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The calorieCount is" + f);
-                        }				    
+                        }	
+		 case 30 -> {
+                            
+                                    var b = new StrawberryLemonade(
+                                            "Strawberry Lemonade", 4);
+                                    var d = b.getDescription();
+                                    var a = b.getQuantityStatement();
+                                    System.out.println(d + " and " + a);
+                                    var c = b.calculatePrice();
+                                    System.out.println(c);
+                                }
+ case 31 -> {
+                            
+                                    var b = new MangoLemonade(
+                                            "Mango Lemonade", 5);
+                                    var d = b.getDescription();
+                                    var a = b.getQuantityStatement();
+                                    System.out.println(d + " and " + a);
+                                    var c = b.calculatePrice();
+                                    System.out.println(c);
+                                }
+ case 32 -> {
+                            
+                                    var b = new OrangeLemonade(
+                                            "Orange Lemonade", 6);
+                                    var d = b.getDescription();
+                                    var a = b.getQuantityStatement();
+                                    System.out.println(d + " and " + a);
+                                    var c = b.calculatePrice();
+                                    System.out.println(c);
+                                }
+ case 33 -> {
+                            
+                                    var b = new VanillaLemonade(
+                                            Vanilla Lemonade", 7);
+                                    var d = b.getDescription();
+                                    var a = b.getQuantityStatement();
+                                    System.out.println(d + " and " + a);
+                                    var c = b.calculatePrice();
+                                    System.out.println(c);
+                                }
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
