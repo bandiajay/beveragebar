@@ -20,7 +20,7 @@ public class App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting!";
 
     // specify number of  custom types available - UPDATE AS IT GROWS! 
-    private static final int NUMBER_CUSTOM_TYPES = 4;
+    private static final int NUMBER_CUSTOM_TYPES = 7;
 
     /**
      * This main() method is the entry point for our application.
@@ -64,7 +64,7 @@ public class App {
                     System.out.print(" 1.Coffee              ");
                     System.out.print(" 2.Milk                ");
                     System.out.print(" 3.Tea                 ");
-                    System.out.print(" 4.Lemonade                 ");
+                    System.out.print(" 7.Lemonade                 ");
 
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -101,6 +101,18 @@ public class App {
                             System.out.println("I'm " + n + ", a " + d + ".");
                         }
                         case 4 -> {
+                            var coke = new Coke(12.50, "Coke", 12.50, 75.00);
+                            System.out.println("I'm " + coke.getName() + ", a " + coke.getDescription() + ".");
+                        }
+                        case 5 -> {
+                            var sprite = new Sprite(15.00, "Sprite", 10.00, 75.00);
+                            System.out.println("I'm " + sprite.getName() + ", a " + sprite.getDescription()+ ".");
+                        } 
+                        case 6 -> {
+                            var gingerale = new Gingerale(25.00, "gingerale", 10.00, 65.00);
+                            System.out.println("I'm " + gingerale.getName() + ", a " + gingerale.getDescription()+ ".");
+                        } 
+                        case 7 -> {
                             System.out.println("Select a lemonade 1.Strawberry "
                                     + "2.Orange 3.Mango 4.Vanilla");
                             int flavour = scanner.nextInt();
