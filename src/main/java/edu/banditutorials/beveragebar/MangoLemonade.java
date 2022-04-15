@@ -39,7 +39,7 @@ public class MangoLemonade extends  Lemonade implements LemonadeOrder{
      */
     @Override
     public String getQuantityStatement() {
-        return "You have ordered " + super.getQuantity() + " Mango Lemonade";
+        return "ordered " + super.getQuantity();
     }
 
     /**
@@ -49,7 +49,7 @@ public class MangoLemonade extends  Lemonade implements LemonadeOrder{
      */
     @Override
     public String calculatePrice() {
-        return "Your have to pay $" + super.getQuantity() * 6;
+        return "You have to pay $" + super.getQuantity() * 6;
     }
 
 }
