@@ -293,7 +293,7 @@ System.out.print(" 33.Vanilla Lemonade                 ");
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The GlucoseContent is" + f);
                         }
 
-			case 27 -> {
+                        case 27 -> {
                             var b = new ChocolateShakes(150.7, 20, 35 ,"Chocolate");
                             var n = b.getName();
                             var d = b.getDescription();
@@ -302,23 +302,23 @@ System.out.print(" 33.Vanilla Lemonade                 ");
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The ProteinCount is" + f);
                         }
 
-			case 28 -> {
-                            var b = new OreoShake(200.7, 15, 25 ,"Oreo");
+                        case 28 -> {
+                            var b = new OreoShakes(200, 15, "Oreo", 25);
                             var n = b.getName();
                             var d = b.getDescription();
 			    var e = b.calculatecost();
-		            var f = b.getcarbohydrateCount();
+		            var f = b.getCarbohydrateCount();
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The carbohydrateCount is" + f);
                         }
 
-			case 29 -> {
+                        case 29 -> {
                             var b = new ButterscotchShake(250.6, 10, 20 ,"Butterscotch");
                             var n = b.getName();
                             var d = b.getDescription();
 			    var e = b.calculatecost();
 		            var f = b.getCalorieCount();
                             System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The calorieCount is" + f);
-                        }	
+                        }
 		 case 30 -> {
                             
                                     var b = new StrawberryLemonade(
