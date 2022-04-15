@@ -118,7 +118,7 @@ public class App {
                             System.out.println("I'm " + gingerale.getName() + ", a " + gingerale.getDescription()+ ".");
                         } 
                             case 7 -> {
-                            var b = new OrangeBreeze(10.00,1,"OrangeBreeze",);
+                            var b = new OrangeBreeze(10.00,1,"OrangeBreeze");
                             var n = b.getName();
                             var d = b.calculatebill();
                             System.out.println("I'm " + n + ", my price is  " + d + ".");
@@ -136,7 +136,7 @@ public class App {
                             System.out.println("I'm " + n + ", my price is  " + d + ".");
                         }
 						case 10 -> {
-                            var b = new MelonSorbetFloat(35.00,1,"MelonSorbetFloat");
+                            var b = new MelonSorbetFloat(35.00f,1,"MelonSorbetFloat");
                             var n = b.getName();
                             var d = b.calculatebill();
                             System.out.println("I'm " + n + ", my price is  " + d + ".");
