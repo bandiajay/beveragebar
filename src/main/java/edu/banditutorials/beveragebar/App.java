@@ -1,5 +1,6 @@
 package edu.banditutorials.beveragebar;
 
+import java.awt.BorderLayout;
 import java.util.Scanner;
 
 /**
@@ -19,7 +20,7 @@ public class App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting!";
 
     // specify number of  custom types available - UPDATE AS IT GROWS! 
-    private static final int NUMBER_CUSTOM_TYPES = 3;
+    private static final int NUMBER_CUSTOM_TYPES = 4;
 
     /**
      * This main() method is the entry point for our application.
@@ -63,7 +64,8 @@ public class App {
                     System.out.print(" 1.Coffee              ");
                     System.out.print(" 2.Milk                ");
                     System.out.print(" 3.Tea                 ");
-                    
+                    System.out.print(" 4.Lemonade                 ");
+
                     // END PASTE - right-click / Format
                     System.out.println();
                     try {
@@ -98,6 +100,29 @@ public class App {
                             var d = b.getDescription();
                             System.out.println("I'm " + n + ", a " + d + ".");
                         }
+                        case 4 -> {
+                            System.out.println("Select a lemonade 1.Strawberry "
+                                    + "2.Orange 3.Mango 4.Vanilla");
+                            int flavour = scanner.nextInt();
+                            System.out.println("Enter quantity");
+                            int quantity = scanner.nextInt();
+                            switch (flavour) {
+                                case 1 -> {
+                                    var b = new StrawberryLemonade(
+                                            "Strawberry Lemonade", quantity);
+                                    var d = b.getDescription();
+                                    var a = b.getQuantityStatement();
+                                    System.out.println(d + " and " + a);
+                                    var c = b.calculatePrice();
+                                    System.out.println(c);
+                                }
+                                default -> {
+
+                                }
+
+                            }
+                        }
+
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
@@ -108,6 +133,7 @@ public class App {
                 } while (isValid);
 
             }
+
         }
 
         // output goodbye
