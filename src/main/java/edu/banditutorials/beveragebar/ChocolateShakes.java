@@ -8,7 +8,7 @@ package edu.banditutorials.beveragebar;
  *
  * @author s546664
  */
-public abstract class ChocolateShakes extends AbstractShakes {
+public class ChocolateShakes extends AbstractShakes {
     
     public double ProteinCount;
 
