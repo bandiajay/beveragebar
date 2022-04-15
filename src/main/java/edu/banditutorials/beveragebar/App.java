@@ -74,6 +74,10 @@ public class App {
 			System.out.print(" 15.Blueberries Smoothie               ");
 			System.out.print(" 16. Dragon Fruit Smoothie               ");
 			System.out.print(" 17. PineApple Smmothie               ");
+			System.out.print("18.PediaLyte            ");
+                    System.out.print("19.ORS            ");
+                    System.out.print("20.LMNT            ");
+                    System.out.print("21.Essentia            ");
                     
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -200,6 +204,54 @@ public class App {
                             var d = b.getDescription();
                             var e = b.calCost();
                             System.out.println("I'm " + n + " , " + d + ","+ e);
+                        }
+				    case 18 -> {
+                            Pedialyte elec = new Pedialyte("Strawberry", "DR.Pedia", "bottle", "Pedialyte");
+                            var nam = elec.getName();
+                            var des = elec.getDescription();
+                            var man = elec.getManufacture();
+                            var typ = elec.getType();
+                            
+
+                            System.out.println("I'm " + nam + ", " + des + ", manufactured by " + man + " available in  " + typ + " ");
+                            System.out.println("Mineral Content==>"+elec.calcMineralContent());
+                            System.out.println("Flavour:"+elec.getFlavor());
+                        }
+                        case 19 -> {
+                            ORS elec = new ORS("Strawberry", "DR.Pedia", "packet", "ORS");
+                            var nam = elec.getName();
+                            var des = elec.getDescription();
+                            var man = elec.getManufacture();
+                            var typ = elec.getType();
+                            
+
+                            System.out.println("I'm " + nam + ", " + des + ", manufactured by " + man + " available in  " + typ + " ");
+                            System.out.println("Mineral Content==>"+elec.calcMineralContent());
+                            System.out.println("Flavour:"+elec.getFlavor());
+                        }
+                        case 20 -> {
+                            LMNT elec = new LMNT(530.50, "DR.Pedia", "bottle", "LMNT");
+                            var nam = elec.getName();
+                            var des = elec.getDescription();
+                            var man = elec.getManufacture();
+                            var typ = elec.getType();
+                            
+
+                            System.out.println("I'm " + nam + ", " + des + ", manufactured by " + man + " available in  " + typ + " ");
+                            System.out.println("Mineral Content==>"+elec.calcMineralContent());
+                            System.out.println("Calories:"+elec.getCalories());
+                        }
+                        case 21 -> {
+                            Essentia elec = new Essentia(55, "DR.Pedia", "packet", "Essentia");
+                            var nam = elec.getName();
+                            var des = elec.getDescription();
+                            var man = elec.getManufacture();
+                            var typ = elec.getType();
+                            
+
+                            System.out.println("I'm " + nam + ", " + des + ", manufactured by " + man + " available in  " + typ + " ");
+                            System.out.println("Mineral Content==>"+elec.calcMineralContent());
+                            System.out.println("Price:"+ elec.getPrice());
                         }
                          
                         //// END PASTE (right-click and Format )
