@@ -82,6 +82,10 @@ public class App {
 			System.out.print("23.Bang Blue Razz            ");
 			System.out.print("24.HiBall Energy            ");
 			System.out.print("25.Monster Energy            ");
+			System.out.print("26.StrawberryShake            ");
+			System.out.print("27.ChocolateShakes           ");
+			System.out.print("28.OreoShake            ");
+			System.out.print("29.ButterscotchShake            ");
                     
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -257,23 +261,59 @@ public class App {
                             System.out.println("Mineral Content==>"+elec.calcMineralContent());
                             System.out.println("Price:"+ elec.getPrice());
                         }
-		        case 6 -> {
+		        case 22 -> {
                             var RedBull = new RedBull(30, 56, 41.2, 2, "RedBull");
                             System.out.println("I'm " + RedBull.getName() + ", a " + RedBull.getDescription()+ ".");
                         } 
-                        case 7 -> {
+                        case 23 -> {
                             var bb = new BangBlueRazz(34.5, 10, "BangBlueRazz");
                             System.out.println("I'm " + bb.getName() + ", a " + bb.getDescription()+ ".");
                         }
-                        case 8 -> {
+                        case 24 -> {
                             var hb = new HiBallEnergy(28.9, 5, "HiBallEnergy");
                             System.out.println("I'm " + hb.getName() + ", a " + hb.getDescription()+ ".");
                         }
-                        case 9 -> {
+                        case 25 -> {
                             var mg = new MonsterEnergy(20.6, 6, "MonsterEnergy");
                             System.out.println("I'm " + mg.getName() + ", a " + mg.getDescription()+ ".");
                         }
                          
+				    
+			case 26 -> {
+                            var b = new StrawberryShake(160.8, 26, 40 ,"Strawberry");
+                            var n = b.getName();
+                            var d = b.getDescription();
+			    var e = b.calculatecost();
+		            var f = b.getGlucoseContent();
+                            System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The GlucoseContent is" + f);
+                        }
+
+			case 27 -> {
+                            var b = new ChocolateShakes(150.7, 20, 35 ,"Chocolate");
+                            var n = b.getName();
+                            var d = b.getDescription();
+			    var e = b.calculatecost();
+		            var f = b.getProteinCount();
+                            System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The ProteinCount is" + f);
+                        }
+
+			case 28 -> {
+                            var b = new OreoShake(200.7, 15, 25 ,"Oreo");
+                            var n = b.getName();
+                            var d = b.getDescription();
+			    var e = b.calculatecost();
+		            var f = b.getcarbohydrateCount();
+                            System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The carbohydrateCount is" + f);
+                        }
+
+			case 29 -> {
+                            var b = new ButterscotchShake(250.6, 10, 20 ,"Butterscotch");
+                            var n = b.getName();
+                            var d = b.getDescription();
+			    var e = b.calculatecost();
+		            var f = b.getCalorieCount();
+                            System.out.println("I'm " + n + ", a " + d + "and the cost is " + e + ". The calorieCount is" + f);
+                        }				    
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
