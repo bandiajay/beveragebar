@@ -359,6 +359,22 @@ System.out.print(" 33.Vanilla Lemonade                 ");
                                     var c = b.calculatePrice();
                                     System.out.println(c);
                                 }
+					   case 34 -> {
+    var c = new ChocolateLassi(2, 1, 2, 100,"ChocolateLassi");
+    System.out.println(c.getName() + ", of  price $" + c.calcPrice() + ".");
+    }
+case 35 -> {
+    var m = new MangoLassi(10,150,2.3,1,2,20,"MangoLassi");
+    System.out.println(m.getDescription()+ ", "+m.getName() + ", of  price $" + m.calcPrice() + ".");
+    } 
+case 36 -> {
+    var d = new DryFruitLassi(2,1,3,100,"DryFruitLassi");
+    System.out.println(d.getName() + ", of  price $" + d.calcPrice() + ".");
+    }
+case 37 -> {
+    var b = new BananaLassi(2,1,5,200,"BananaLassi");
+    System.out.println(b.getName() + ", of  price $" + b.calcPrice() + ".");
+    }
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
