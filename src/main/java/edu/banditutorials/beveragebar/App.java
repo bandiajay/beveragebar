@@ -111,7 +111,7 @@ public class App {
                             System.out.println("I'm " + gingerale.getName() + ", a " + gingerale.getDescription()+ ".");
                         } 
                         
-                        case 7 -> {
+                        case 11 -> {
                             var b = new PeachSmoothie(25.5, 9.0, 5, 5, "Smoothie");
                             var n = b.getName();
                             var d = b.getDescription();
@@ -119,7 +119,7 @@ public class App {
                             System.out.println("I'm " + n + " , " + d + ","+e);
                         }
                         
-                        case 8 -> {
+                        case 12 -> {
                             var b = new BlueBerriesSmoothie(45.5, 5.0, 7, 3, "Smoothie");
                             var n = b.getName();
                             var d = b.getDescription();
@@ -127,7 +127,7 @@ public class App {
                             System.out.println("I'm " + n + " , " + d + ","+ e);
                         }
                         
-                        case 9 -> {
+                        case 13 -> {
                             var b = new DragonFruitSmoothie(7.0, 10, 6, "Smoothie");
                             var n = b.getName();
                             var d = b.getDescription();
@@ -135,7 +135,7 @@ public class App {
                             System.out.println("I'm " + n + " , " + d + ","+ e);
                         }
                         
-                        case 10 -> {
+                        case 14 -> {
                             var b = new PineAppleSmoothie(15.5, 8.0, 13, 9, "Smoothie");
                             var n = b.getName();
                             var d = b.getDescription();
