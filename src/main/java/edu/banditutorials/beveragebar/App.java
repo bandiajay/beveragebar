@@ -19,7 +19,7 @@ public class App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting!";
 
     // specify number of  custom types available - UPDATE AS IT GROWS! 
-    private static final int NUMBER_CUSTOM_TYPES = 33;
+    private static final int NUMBER_CUSTOM_TYPES = 41;
 
     /**
      * This main() method is the entry point for our application.
@@ -86,6 +86,21 @@ public class App {
 			System.out.print("27.ChocolateShakes           ");
 			System.out.print("28.OreoShake            ");
 			System.out.print("29.ButterscotchShake            ");
+			
+			System.out.print("30.StrawberryLemonade            ");
+			System.out.print("31.MangoLemonade           ");
+			System.out.print("32.OrangeLemonade            ");
+			System.out.print("33.VanillaLemonade            ");
+			
+			System.out.print("34.ChocolateLassi            ");
+			System.out.print("35.MangoLassi           ");
+			System.out.print("36.DryFruitLassi            ");
+			System.out.print("37.BananaLassi            ");
+			
+			System.out.print("38.StrawberryMojito            ");
+			System.out.print("39.CoconutMojito           ");
+			System.out.print("40.BlackberryMojito            ");
+			System.out.print("41.ClassicMintMojito            ");
 		
 System.out.println(" 30.Strawberry Lemonade                 ");
 System.out.print(" 31.Mango Lemonade                 ");
