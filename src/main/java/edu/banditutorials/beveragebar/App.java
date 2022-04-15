@@ -1,6 +1,5 @@
 package edu.banditutorials.beveragebar;
 
-import java.awt.BorderLayout;
 import java.util.Scanner;
 
 /**
@@ -20,7 +19,7 @@ public class App {
     private static final String GOODBYE_MESSAGE = "Thank you for visiting!";
 
     // specify number of  custom types available - UPDATE AS IT GROWS! 
-    private static final int NUMBER_CUSTOM_TYPES = 4;
+    private static final int NUMBER_CUSTOM_TYPES = 3;
 
     /**
      * This main() method is the entry point for our application.
@@ -64,6 +63,13 @@ public class App {
                     System.out.print(" 1.Coffee              ");
                     System.out.print(" 2.Milk                ");
                     System.out.print(" 3.Tea                 ");
+                    System.out.print(" 7.OrangeBreeze              ");
+                    System.out.print(" 8.CoconutWaterSlush                ");
+                    System.out.print(" 9.RaspberryVanillaSoda                 ");
+                    System.out.print(" 10.MelonSorbetFloat                 ");
+                    System.out.print(" 11.Apple Juice                 ");
+                    System.out.print(" 12.Bananna Juice                 ");
+                    System.out.print(" 13.Mango Juice                ");
 
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -99,7 +105,66 @@ public class App {
                             var d = b.getDescription();
                             System.out.println("I'm " + n + ", a " + d + ".");
                         }
-
+                        case 4 -> {
+                            var coke = new Coke(12.50, "Coke", 12.50, 75.00);
+                            System.out.println("I'm " + coke.getName() + ", a " + coke.getDescription() + ".");
+                        }
+                        case 5 -> {
+                            var sprite = new Sprite(15.00, "Sprite", 10.00, 75.00);
+                            System.out.println("I'm " + sprite.getName() + ", a " + sprite.getDescription() + ".");
+                        }
+                        case 6 -> {
+                            var gingerale = new Gingerale(25.00, "gingerale", 10.00, 65.00);
+                            System.out.println("I'm " + gingerale.getName() + ", a " + gingerale.getDescription() + ".");
+                        }
+                        case 7 -> {
+                            var b = new OrangeBreeze(10.00,1,"OrangeBreeze",);
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+                        case 8 -> {
+                            var b = new CoconutWaterSlush(20.00, 1, "CoconutWaterSlush");
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+                        case 9 -> {
+                            var b = new RaspberryVanillaSoda(25.00, 1, "RaspberryVanillaSoda");
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+                        case 10 -> {
+                            var b = new MelonSorbetFloat(35.00, 1, "MelonSorbetFloat");
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+                        case 11 -> {
+                            var b = new AppleJuice("Apple Juice");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.juiceCost();
+                            System.out.println("I'm " + n + ", a " + d + ".");
+                            System.out.println(c);
+                        }
+                        case 12 -> {
+                            var b = new BanannaJuice("bananna");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.juiceCost();
+                            System.out.println("I'm " + n + ", a " + d + ".");
+                            System.out.println("Cost of Banana Juice is " + c);
+                        }
+                        case 13 -> {
+                            var b = new MangoJuice("Mango Juice");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.juiceCost();
+                            System.out.println("I'm " + n + ", a " + d + ".");
+                            System.out.println(c);
+                        }
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
@@ -110,7 +175,6 @@ public class App {
                 } while (isValid);
 
             }
-
         }
 
         // output goodbye

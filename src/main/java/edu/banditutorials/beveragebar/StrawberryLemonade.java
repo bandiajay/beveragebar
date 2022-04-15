@@ -38,7 +38,7 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
      */
     @Override
     public String getQuantityStatement() {
-        return "ordered " + super.getQuantity();
+        return "You have ordered " + super.getQuantity() + " Strawberry Lemonade";
     }
 
     /**
@@ -48,7 +48,7 @@ public class StrawberryLemonade extends Lemonade implements LemonadeOrder {
      */
     @Override
     public String calculatePrice() {
-        return "You have to pay $" + super.getQuantity() * 4;
+        return "Your have to pay $" + super.getQuantity() * 4;
     }
 
 }
