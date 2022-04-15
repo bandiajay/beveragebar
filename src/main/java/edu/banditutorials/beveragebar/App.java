@@ -70,6 +70,10 @@ public class App {
 		    System.out.print(" 11.Apple Juice                 ");
                     System.out.print(" 12.Bananna Juice                 ");
                     System.out.print(" 13.Mango Juice                ");
+			System.out.print(" 14.Peach Smoothie                ");
+			System.out.print(" 15.Blueberries Smoothie               ");
+			System.out.print(" 16. Dragon Fruit Smoothie               ");
+			System.out.print(" 17. PineApple Smmothie               ");
                     
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -165,6 +169,39 @@ public class App {
                             System.out.println("I'm " + n + ", a " + d + ".");
                             System.out.println(c);
                         }
+			   
+                       case 14 -> {
+                            var b = new PeachSmoothie(25.5, 9.0, 5, 5, "Peach Smoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+e);
+                        }
+                        
+                        case 15 -> {
+                            var b = new BlueBerriesSmoothie(45.5, 5.0, 7, 3, "Blueberries Smoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+ e);
+                        }
+                        
+                        case 16 -> {
+                            var b = new DragonFruitSmoothie(7.0, 10, 6, "Dragon FriutSmoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+ e);
+                        }
+                        
+                        case 17 -> {
+                            var b = new PineAppleSmoothie(15.5, 8.0, 13, 9, "Pineapple Smoothie");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var e = b.calCost();
+                            System.out.println("I'm " + n + " , " + d + ","+ e);
+                        }
+                         
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
