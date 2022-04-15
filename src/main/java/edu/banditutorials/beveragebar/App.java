@@ -67,6 +67,9 @@ public class App {
                     System.out.print(" 8.CoconutWaterSlush                ");
                     System.out.print(" 9.RaspberryVanillaSoda                 ");
                      System.out.print(" 10.MelonSorbetFloat                 ");
+		    System.out.print(" 11.Apple Juice                 ");
+                    System.out.print(" 12.Bananna Juice                 ");
+                    System.out.print(" 13.Mango Juice                ");
                     
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -137,6 +140,30 @@ public class App {
                             var n = b.getName();
                             var d = b.calculatebill();
                             System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+				    case 11 -> {
+                            var b = new AppleJuice("Apple Juice");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.juiceCost();
+                            System.out.println("I'm " + n + ", a " + d + ".");
+                            System.out.println(c);
+                        }
+                        case 12 -> {
+                            var b = new BanannaJuice("bananna");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.juiceCost();
+                            System.out.println("I'm " + n + ", a " + d + ".");
+                            System.out.println("Cost of Banana Juice is "+c);
+                        }
+                        case 13 -> {
+                            var b = new MangoJuice("Mango Juice");
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.juiceCost();
+                            System.out.println("I'm " + n + ", a " + d + ".");
+                            System.out.println(c);
                         }
                         //// END PASTE (right-click and Format )
                         default -> {
