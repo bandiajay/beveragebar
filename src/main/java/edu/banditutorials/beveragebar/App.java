@@ -63,6 +63,10 @@ public class App {
                     System.out.print(" 1.Coffee              ");
                     System.out.print(" 2.Milk                ");
                     System.out.print(" 3.Tea                 ");
+                    System.out.print(" 7.OrangeBreeze              ");
+                    System.out.print(" 8.CoconutWaterSlush                ");
+                    System.out.print(" 9.RaspberryVanillaSoda                 ");
+                     System.out.print(" 10.MelonSorbetFloat                 ");
                     
                     // END PASTE - right-click / Format
                     System.out.println();
@@ -110,6 +114,30 @@ public class App {
                             var gingerale = new Gingerale(25.00, "gingerale", 10.00, 65.00);
                             System.out.println("I'm " + gingerale.getName() + ", a " + gingerale.getDescription()+ ".");
                         } 
+                            case 7 -> {
+                            var b = new OrangeBreeze(10.00,1,"OrangeBreeze",);
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+                        case 8 -> {
+                            var b = new CoconutWaterSlush(20.00,1,"CoconutWaterSlush");
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+                        case 9 -> {
+                            var b = new RaspberryVanillaSoda(25.00,1,"RaspberryVanillaSoda");
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
+						case 10 -> {
+                            var b = new MelonSorbetFloat(35.00,1,"MelonSorbetFloat");
+                            var n = b.getName();
+                            var d = b.calculatebill();
+                            System.out.println("I'm " + n + ", my price is  " + d + ".");
+                        }
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
