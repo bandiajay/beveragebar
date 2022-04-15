@@ -8,7 +8,7 @@ package edu.banditutorials.beveragebar;
  *
  * @author s546985
  */
-public abstract class MangoLassi extends Lassi{
+public class MangoLassi extends Lassi{
     private double glucosecount;
     private double calories;
     private double cost;
