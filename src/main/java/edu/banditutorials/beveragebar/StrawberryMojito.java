@@ -27,14 +27,14 @@ public class StrawberryMojito extends Mojito{
         return price;
     }
    
-    
+     
     @Override
     public double getTotalPrice(){
-        return 0.0;
+        return price*quantity;
     }
     
     @Override
     public String getDescription(){
-        return "Hello";
+        return "with a total cost of: $";
     }
 }
