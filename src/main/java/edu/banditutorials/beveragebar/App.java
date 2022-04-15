@@ -352,7 +352,7 @@ System.out.print(" 33.Vanilla Lemonade                 ");
  case 33 -> {
                             
                                     var b = new VanillaLemonade(
-                                            Vanilla Lemonade", 7);
+                                            "Vanilla Lemonade", 7);
                                     var d = b.getDescription();
                                     var a = b.getQuantityStatement();
                                     System.out.println(d + " and " + a);

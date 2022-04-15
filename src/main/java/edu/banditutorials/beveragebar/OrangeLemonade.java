@@ -10,8 +10,9 @@ package edu.banditutorials.beveragebar;
  */
 public class OrangeLemonade extends Lemonade implements LemonadeOrder {
 
-    public OrangeLemonade(String name) {
+    public OrangeLemonade(String name,int quantity) {
         super(name);
+        super.setQuantity(quantity);
     }
 
     /**
