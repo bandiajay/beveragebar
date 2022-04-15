@@ -375,6 +375,39 @@ case 37 -> {
     var b = new BananaLassi(2,1,5,200,"BananaLassi");
     System.out.println(b.getName() + ", of  price $" + b.calcPrice() + ".");
     }
+					    case 38 -> {
+                            var b = new StrawberryMojito("Strawberry Mojito",1.0,25.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                            System.out.println("I'm a " + n + " " + d + " "+c+".");
+                          
+                        }
+                        
+                        case 39 -> {
+                            var b = new CoconutMojito("Coconut Mojito",2.0,35.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                             System.out.println("I'm a " + n + " " + d + " "+c+".");
+                           
+                        }
+                        case 40 -> {
+                            var b = new BlackberryMojito("Blackberry Mojito",3.0,15.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                            System.out.println("I'm a " + n + " " + d + " "+c+".");
+                            
+                        }
+                        case 41 -> {
+                            var b = new ClassicMintMojito("ClassicMint Mojito",4.0,10.5);
+                            var n = b.getName();
+                            var d = b.getDescription();
+                            var c = b.getTotalPrice();
+                           System.out.println("I'm a " + n + " " + d + " "+c+".");
+                            
+                        }
                         //// END PASTE (right-click and Format )
                         default -> {
                         }
